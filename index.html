@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- Custom CSS -->
+    <style>
+      .font-lato {
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome/css/all.min.css">
+    <!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and Daisy UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'fruit-primary-bg': '#F85559',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato">
+    <!-- Header Area Start Here -->
+    <header class="md:container md:mx-auto">
+      <div
+        class="navbar flex-row-reverse md:flex-row bg-base-100 justify-between md:bg-fruit-primary-bg rounded-full my-12 px-12 py-9"
+      >
+        <div class="">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black md:text-white"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-black md:text-white font-medium text-lg">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <a class="normal-case text-black md:text-white font-extrabold text-4xl gap-4"
+          ><img src="assets/images/logo.png" alt="" /> Fruit Burst</a
+        >
+        <div class="flex-none md:flex input input-bordered rounded-full hidden invisible md:visible">
+          <input
+            type="text"
+            placeholder="Search here"
+            class=""
+          />
+          <i class="fa-solid fa-magnifying-glass mr-3"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area End Here -->
+  </body>
 </html>
