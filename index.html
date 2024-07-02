@@ -48,45 +48,14 @@
     <!-- Header Area Start Here -->
     <header class="md:container md:mx-auto">
       <div
-        class="navbar flex-row-reverse md:flex-row bg-base-100 justify-between md:bg-fruit-primary-bg rounded-full md:my-12 md:px-12 pt-11 pb-6 md:py-9"
+        class="navbar flex-row md:flex-row flex-wrap bg-base-100 justify-center lg:justify-between md:bg-fruit-primary-bg rounded-full md:my-12 md:px-12 pt-11 pb-6 md:py-9 relative"
       >
+        <a
+          class="normal-case text-black md:text-white font-extrabold text-2xl md:text-4xl gap-4"
+          ><img src="assets/images/logo.png" alt="" /> Fruit Burst</a
+        >
         <div class="">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52 text-white"
-            >
-              <li class="rounded-xl ease-in-out duration-300">
-                <a>Home</a>
-              </li>
-              <li class="rounded-xl ease-in-out duration-300">
-                <a>About Us</a>
-              </li>
-              <li class="rounded-xl ease-in-out duration-300">
-                <a>Shop</a>
-              </li>
-              <li class="rounded-xl ease-in-out duration-300">
-                <a>All Fruits</a>
-              </li>
-            </ul>
-          </div>
-          <div class="hidden lg:flex">
+          <div class="flex flex-col flex-wrap justify-center">
             <ul
               class="menu menu-horizontal px-1 md:text-white font-medium text-lg"
             >
@@ -105,13 +74,8 @@
             </ul>
           </div>
         </div>
-        <a
-          class="normal-case text-black md:text-white font-extrabold text-2xl md:text-4xl gap-4"
-          ><img src="assets/images/logo.png" alt="" /> Fruit Burst</a
-        >
-        <div
-          class="flex-none md:flex input input-bordered rounded-full hidden invisible md:visible"
-        >
+
+        <div class="flex-none lg:flex input input-bordered rounded-full">
           <input type="text" placeholder="Search here" class="" />
           <i class="fa-solid fa-magnifying-glass mr-3"></i>
         </div>
@@ -243,8 +207,10 @@
       </section>
       <!-- Slider Area End Here -->
       <!-- Fruit Area Start Here -->
-      <section class="md:container md:mx-auto py-8 md:py-40">
-        <div class="flex flex-col md:flex-row justify-between pb-12">
+      <section class="md:container md:mx-auto py-8 lg:py-20">
+        <div
+          class="flex flex-wrap text-center lg:text-left justify-center lg:justify-between pb-12"
+        >
           <div class="space-y-6">
             <h3 class="text-5xl font-extrabold">Deal of the day</h3>
             <p>
@@ -257,7 +223,9 @@
             </p>
           </div>
           <div>
-            <div class="grid grid-flow-col gap-10 text-center auto-cols-max mt-5">
+            <div
+              class="grid grid-flow-col gap-10 text-center auto-cols-max mt-5"
+            >
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl font-extrabold">
                   <span style="--value: 15"></span>
@@ -285,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-4">
+        <div class="flex flex-wrap justify-center items-center gap-4">
           <!-- Card One -->
           <div class="card w-96 bg-base-100 shadow-xl border border-gray-300">
             <figure class="px-10 pt-10">
@@ -974,7 +942,7 @@
                     </p>
                   </div>
                   <div
-                    class="grid grid-cols-1 md:grid-cols-4 gap-14 text-white"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-14 text-white"
                   >
                     <!-- Team One -->
                     <div class="flex flex-col items-center space-y-5">
@@ -1095,11 +1063,13 @@
     <footer class="footer footer-center p-10 bg-black text-primary-content">
       <div class="space-y-4 md:space-y-10">
         <div class="flex items-center gap-4">
-          <a
-          ><img src="assets/images/logo.png" alt="" /></a
-        > <span class="normal-case text-white font-extrabold text-2xl md:text-4xl">Fruit Burst</span>
+          <a><img src="assets/images/logo.png" alt="" /></a>
+          <span
+            class="normal-case text-white font-extrabold text-2xl md:text-4xl"
+            >Fruit Burst</span
+          >
         </div>
-        <div class="gap-4 md:gap-10 grid grid-cols-4 md:grid-cols-6">
+        <div class="gap-4 md:gap-10 flex flex-wrap justify-center">
           <a href="">Home</a>
           <a href="">About Us</a>
           <a href="">Shop</a>
@@ -1108,15 +1078,15 @@
           <a href="">My Account</a>
         </div>
         <div>
-        <div class="grid grid-flow-col gap-4 md:gap-12 text-3xl md:text-4xl">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-apple"></i>
+          <div class="grid grid-flow-col gap-4 md:gap-12 text-3xl md:text-4xl">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-apple"></i>
+          </div>
         </div>
-      </div>
       </div>
     </footer>
     <!-- Footer Area End Here -->
